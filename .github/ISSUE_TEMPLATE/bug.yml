@@ -1,0 +1,44 @@
+name: Bug Report 
+description: Report an Issue or Bug with the Package 
+title: "[Bug]: "
+labels: ["bug"]
+body:
+    - type: textarea
+      id: what-happened
+      attributes:
+          label: What happened?
+          description: Please describe in detail the problem encountered 
+          placeholder: I cannot currently do X thing because when I do, it breaks X thing
+      validations:
+          required: true
+    - type: textarea
+      id: como-reproduzir
+      attributes:
+          label: How to reproduce the bug
+          description: How did this occur, please add any config values used and provide a set of reliable steps if possible  
+      validations:
+          required: true
+    - type: dropdown
+      id: navegador
+      attributes:
+        label: In which browser does the error occur? 
+        description: You can select more than one option or none if the information is not relevant 
+        multiple: true
+        options:
+        - Google Chrome
+        - Firefox
+        - Microsoft Edge
+        - Internet Explorer
+    - type: input
+      id: php-version
+      attributes:
+          label: PHP Version
+          description: What version of PHP are you running? Please be as specific as possible
+          placeholder: 8.2.0
+    - type: textarea
+      id: notes
+      attributes:
+          label: Notes 
+          description: Use this field to provide any other notes that you feel might be relevant to the issue  
+      validations:
+          required: false

@@ -1,0 +1,19 @@
+name: Enhancement
+description: New feature or improvement of an existing one 
+title: "[Enhancement]: "
+labels: ["enhancement"]
+body:
+    - type: textarea
+      id: enhancement
+      attributes:
+          label: Enhancement
+          description: Please describe in detail the new feature or enhancement you desire 
+      validations:
+          required: true
+    - type: textarea
+      id: impact 
+      attributes:
+          label: Expected impact
+          description: What is the expected impact with this enhancement or new feature? 
+      validations:
+          required: true
