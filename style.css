@@ -1,0 +1,14 @@
+/*!
+Theme Name: Tailwind Blog
+Theme URI: https://antonio.anerao.dev
+Author: Antonio Anerão Junior
+Theme URI: https://antonio.anerao.dev
+Description: WordPress blog with styled with TailwindCSS
+Version: 1.0
+Requires PHP: 7.4
+Tested up to: 8.2
+*/
+
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
