@@ -12,3 +12,24 @@ Tested up to: 8.2
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
+
+.sub-menu {
+    @apply hidden absolute top-full -m-1 -ml-2 left-auto w-max bg-gray-100 rounded-lg py-2 px-3 space-y-1
+}
+
+.menu-item > ul > li > a {
+    @apply text-gray-500 hover:text-gray-600 
+}
+
+.menu-item:hover > .sub-menu {
+    @apply block 
+}
+
+.menu-item:hover > ul:hover > li:hover {
+  @apply text-gray-300 block
+}
+
+.menu-item-has-children::after {
+    font-size: 12px;
+    content: '▼';
+}
